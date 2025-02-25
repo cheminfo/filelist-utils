@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.3](https://github.com/cheminfo/filelist-utils/compare/v1.11.2...v1.11.3) (2025-02-25)
+
+
+### Bug Fixes
+
+* support relative path starting with "./" ([#95](https://github.com/cheminfo/filelist-utils/issues/95)) ([73279f3](https://github.com/cheminfo/filelist-utils/commit/73279f39ff1beaa2e4ea194b2bc751fb86bb8d43))
+
 ## [1.11.2](https://github.com/cheminfo/filelist-utils/compare/v1.11.1...v1.11.2) (2024-09-28)
 
 

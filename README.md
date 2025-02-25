@@ -7,6 +7,13 @@
 
 Create a FileCollection from various sources.
 
+# DEPRECATED
+
+This project was deprecated because it tries to modify a native type (`File`) which is not optimal.
+
+A new project was created to avoid this issue and can be found at: 
+https://www.npmjs.com/package/file-collection
+
 ## Introduction
 
 In order to make compatible code between the browser and node and to allow drag and drop of a folder it is useful to an abstraction level.

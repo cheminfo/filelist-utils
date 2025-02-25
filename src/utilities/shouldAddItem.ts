@@ -2,7 +2,7 @@ import { FilterOptions } from '../Options';
 
 /**
  * Utility function that allows to filter files from a FileCollection ignore by default the dotFiles
- * @param fileCollection
+ * @param relativePath
  * @param options
  * @returns
  */
@@ -13,8 +13,9 @@ export function shouldAddItem(
   const { ignoreDotfiles = true } = options;
   if (ignoreDotfiles) {
     return (
-      relativePath.split('/').filter((part) => part.startsWith('.')).length ===
-      0
+      relativePath
+        .split('/')
+        .filter((part) => part.startsWith('.') && part !== '.').length === 0
     );
   }
   return true;

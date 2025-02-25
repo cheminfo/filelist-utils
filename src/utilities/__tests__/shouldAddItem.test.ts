@@ -6,4 +6,6 @@ test('shouldAddItem', async () => {
   expect(shouldAddItem('.dotFolder/a.txt')).toBe(false);
   expect(shouldAddItem('dir1/a.txt')).toBe(true);
   expect(shouldAddItem('dir1/.b.txt')).toBe(false);
+  expect(shouldAddItem('./test.txt')).toBe(true);
+  expect(shouldAddItem('./.test.txt')).toBe(false);
 });
